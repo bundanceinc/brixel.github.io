@@ -100,6 +100,15 @@
             border-radius: 10px;
         }
 
+        .preview img.static {
+            position: absolute;
+            width: 250;
+            height: 541;
+            top: 23.0px;
+            left: 23.0px;
+            border-radius: 10px;
+        }
+
         .preview img.overlay {
             position: absolute; /* Add absolute positioning to the overlay image */
             top: 0;
@@ -155,9 +164,9 @@
 </div>
 
 <div class="preview">
+    <img src="docs/assets/preview@2x.png" class="static" width="250" height="541" />
     <video width="250" height="541" autoplay>
         <source src="docs/assets/preview.mp4" type="video/mp4">
-        <img src="docs/assets/preview@2x.png" />
     </video>
     <div class="cover"></div>
     <img src="docs/assets/device@2x.png" class="overlay" />
