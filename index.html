@@ -29,86 +29,109 @@
             margin: 0px;
         }
 
-.logo {
-    margin-bottom: 32px;
-}
+        .logo {
+            margin-bottom: 32px;
+        }
 
-h1 {
-    font-weight: 200;
-    font-size: 34px; 
-    line-height: 130%;
-}
+        h1 {
+            font-weight: 200;
+            font-size: 34px; 
+            line-height: 130%;
+        }
 
-p {
-    font-size: 17px; 
-    font-weight: 300; /* Regular font weight for body text */
-    line-height: 140%; /* Increased line height for body text */
-}
+        p {
+            font-size: 17px; 
+            font-weight: 300; /* Regular font weight for body text */
+            line-height: 140%; /* Increased line height for body text */
+        }
 
-a {
-    color: #2B3116;
-    text-decoration: underline;
-}
+        a {
+            color: #2B3116;
+            text-decoration: underline;
+        }
 
-p.small-text a {
-    text-decoration: none;
-}
+        p.small-text a {
+            text-decoration: none;
+        }
 
-p.small-text {
-    font-size: 13px; 
-    font-weight: 300; /* Regular font weight for body text */
-    line-height: 150%; /* Increased line height for body text */
-}
+        p.small-text {
+            font-size: 13px; 
+            font-weight: 300; /* Regular font weight for body text */
+            line-height: 150%; /* Increased line height for body text */
+        }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 0 16px;
-}
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 0 16px;
+        }
 
-footer {
-    width: 100%;
-    text-align: left;
-}
+        footer {
+            width: 100%;
+            text-align: left;
+        }
 
-.content {
-    flex: 1;
-    min-width: 320px;
-    max-width: 545px;
-    /* padding-bottom: 88px; */
-    margin-right: 40px;
-}
+        .content {
+            flex: 1;
+            min-width: 320px;
+            max-width: 545px;
+            /* padding-bottom: 88px; */
+            margin-right: 40px;
+        }
 
-.preview {
-    flex: 1;
-    max-height: 587px;
-    max-width: 295.82px;
-}
+        .preview {
+            flex: 1;
+            max-height: 587px;
+            max-width: 295.82px;
+            position: relative; /* Add relative positioning */
+            padding-left: 23px;
+            padding-top: 23px;
+        }
 
-.preview img {
-    max-height: 587px;
-    max-width: 295.82px;
-}
+        .preview video {
+            position: relative;
+            width: 250;
+            height: 541;
+            border-radius: 10px;
+        }
 
-.badge {
-    margin-top: 48px;
-}
+        .preview img.overlay {
+            position: absolute; /* Add absolute positioning to the overlay image */
+            top: 0;
+            left: 0;
+            width: 295.82px;
+            height: 587px;
+        }
 
-.footer {
-    margin-top: 40px;
-}
+        .preview .cover {
+            position: absolute; /* Add absolute positioning to the overlay image */
+            top: 23.0px;
+            left: 23.0px;
+            width: 250px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: #FFF8E8;
+        }
 
-@media screen and (max-width: 950px) {
-    .preview {
-        display: none;
-    }
-}
-</style>
+        .badge {
+            margin-top: 48px;
+        }
+
+        .footer {
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 950px) {
+            .preview {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -132,9 +155,15 @@ footer {
 </div>
 
 <div class="preview">
-    <img src="docs/assets/preview@2x.png" />
+    <video width="250" height="541" autoplay>
+        <source src="docs/assets/preview.mp4" type="video/mp4">
+        <img src="docs/assets/preview@2x.png" />
+    </video>
+    <div class="cover"></div>
+    <img src="docs/assets/device@2x.png" class="overlay" />
 </div>
 </div>
 </body>
 
 </html>
+
