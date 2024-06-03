@@ -51,11 +51,18 @@
         }
 
         p.small-text a {
-            text-decoration: none;
+            text-decoration: underline;
         }
 
         p.small-text {
             font-size: 13px; 
+            font-weight: 300; /* Regular font weight for body text */
+            line-height: 150%; /* Increased line height for body text */
+        }
+
+        p.small-text-note {
+            font-size: 12px; 
+            font-style: italic;
             font-weight: 300; /* Regular font weight for body text */
             line-height: 150%; /* Increased line height for body text */
         }
@@ -128,7 +135,7 @@
         }
 
         .badge {
-            margin-top: 48px;
+            margin-top: 32px;
         }
 
         .footer {
@@ -149,8 +156,12 @@
 <div class="content">
     <img src="docs/assets/logo.svg" width="157px" class="logo" />
 
-    <h1>Discover Brixel, the most relaxing block puzzle game</h1>
-    <p>Embark on a nostalgic yet fresh adventure with Brixel, an innovative block puzzle game that redefines the genre with its vintage aesthetic and clever gameplay innovations. Unlike typical block games, Brixel offers a serene visual experience paired with strategic depth, making it a standout in the puzzle game landscape.</p>
+    <h1>Meet Brixels, the most relaxing block puzzle game</h1>
+    <p>Brixels is an <em>indie game</em> focused on helping you relax while playing it. The game purposely has a simple interface and reduced animations, it's meant to feel meditative. </p>
+
+    <p>The game includes powers that allow you to get out of tough spots, but they're not required for you to enjoy or succeed in the game.</p>
+
+    <p>Download the game below and let us know what you think.</p>
 
     <p class="small-text badge">
         <a href="https://apps.apple.com/app/id/6477423793" target="_blank">
@@ -158,7 +169,9 @@
         </a>
     </p>
 
-    <p class="small-text"><a href="mailto:support@brixels.co">Need help or have any questions about the app?</a></p>
+    <p class="small-text">Your <a href="mailto:feedback@brixels.co">feedback</a> is greatly appreciated, and do reach out if you need <a href="mailto:support@brixels.co">support</a> with the game. You can also join us on <a href="https://www.reddit.com/r/Brixels/" target="_blank">Reddit</a> and <a href="https://www.facebook.com/profile.php?id=61558496816506">Facebook</a></p>
+
+    <p class="small-text-note">* An indie game is a one that is typically designed, and developed by one person. We're not a giant studio, just a maker making something fun.</a></p>
 
     <p class="small-text footer">&copy; 2024 Bundance, Inc.</p>
 </div>
