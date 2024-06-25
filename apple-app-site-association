@@ -1,0 +1,16 @@
+{
+    "applinks": {
+        "details": [{
+            "appIDs": ["2MNBFRSE89.co.brixel"],
+            "components": [{
+                "/": "/referral/*",
+                "comment": "Matches any URL whose path starts with /referral/"
+            }]
+        }]
+    },
+    "appclips": {
+        "apps": [
+            "2MNBFRSE89.co.brixel.Clip"
+        ]
+    }
+}
