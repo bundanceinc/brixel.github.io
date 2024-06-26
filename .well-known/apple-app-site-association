@@ -1,16 +1,26 @@
 {
     "applinks": {
-        "details": [{
-            "appIDs": ["2MNBFRSE89.co.brixel"],
-            "components": [{
-                "/": "/referral/*",
-                "comment": "Matches any URL whose path starts with /referral/"
-            }]
-        }]
-    },
-    "appclips": {
-        "apps": [
-            "2MNBFRSE89.co.brixel.Clip"
-        ]
+      "apps": [],
+      "details": [
+        {
+          "appIDs": [
+            "2MNBFRSE89.co.brixel"
+          ],
+          "paths": [
+            "*"
+          ],
+          "components": [
+            {
+              "/": "/*",
+              "comment": "Matches any URL with a fragment parameters to open it as universal link"
+            },
+            {
+              "/": "/privacy.html",
+              "exclude": true,
+              "comment": "Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link."
+            }
+          ]
+        }
+      ]
     }
-}
+  }
